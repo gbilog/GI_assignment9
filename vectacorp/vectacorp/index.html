@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#responsive-menu').mobileMenu();
+		});
+	</script>
+	<script>
+    $( function() {
+        $("#responsive-menu li").tooltip("enable");
+    });    
+    </script>
+    <script> $( function() {
+        $( "#tabs" ).tabs();
+     });
+    </script>
+       <script> $( function() {
+        $( "#accordion" ).accordion({collapsible:true});
+     });
+    </script>
+</head>
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li title = "Vecta Corporation's Welcome Page"><a href="index.html" >Home</a></li>
+				<li title = "Learn more about Vecta Corp's Mission"><a href="aboutus.html">About Us</a></li>
+				<li title = "Vecta Corp offers 3 solutions for prospecting, converting, and retaining customers"><a href="solutions.html">Solutions</a></li>
+				<li title = "Click here for documentation, tips for best practices, and more"><a href="support.html">Support</a></li>
+				<li title = "Connect with us in person, by phone, or via email"><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="welcome" class="five columns">
+			<h4>Welcome</h4>
+
+			<p>With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+		</section>
+		
+		<section id="solutions" class="six columns">
+			<h4>Our Solutions</h4> 
+			
+			<!-- INSERT TABS HERE -->
+            <div id="tabs">
+              <ul>
+                <li><a href="#tabs-1"><span>One</span></a></li>
+                <li><a href="#tabs-2"><span>Two</span></a></li>
+                <li><a href="#tabs-3"><span>Three</span></a></li>
+              </ul>
+              <div id="tabs-1">
+                <img src="images/logo_vprospect.gif" alt="vprospect">
+                <p>First tab is active by default:</p>
+              </div>
+              <div id="tabs-2">
+                <img src="images/logo_vconvert.gif" alt="vconvert">
+                <p>
+                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+              </div>
+              <div id="tabs-3">
+                 <img src="images/logo_vretain.gif" alt="vretain">
+
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+            </div>
+		</section>
+		
+		<section id="testimonials" class="five columns">
+			<h4>Client Testimonials</h4>
+            <div id="accordion">
+               <h4> Iona Ford</h4>
+               <div>
+                   
+                      <q>Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.</q>
+
+                        <p>Iona Ford<br>
+                            President<br>
+                            Chevy Dealers Association </p>
+                   
+               </div>
+               <h4> Robin Banks</h4> 
+               <div>
+                   <q>Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.</q>
+                   
+                    <p>Robin Banks<br>
+                        CEO<br>
+                        Profits Financial, Inc.
+                    </p>
+               </div>
+            </div>
+			<!-- INSERT ACCORDION HERE -->
+		</section>
+	</main>
+
+</body>
+</html>
